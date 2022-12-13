@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: hsl(210, 60%, 98%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    word-spacing: 4px;
+    padding: 2rem 0 2rem 0;
+}
+
+.container{
+    max-width: 850px;
+    background-color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+#countNotifications{
+    margin-right: auto;
+    margin-left: 20px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 3px 16px 3px 16px;
+}
+
+#readAllButton{
+    color: grey;
+    cursor: pointer;
+}
+
+#readAllButton:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.notification:last-of-type{
+    margin-bottom: 0;
+}
+
+.author-info{
+    margin-left: 2rem;
+    color: darkgray;
+}
+
+.author{
+    transition: 0.1s;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+.author:hover{
+    transition: 0.1s;
+    color: hsl(219, 85%, 26%);
+}
+
+.temp{
+    color: grey;
+    margin-top: 7px;
+}
+
+.post{
+    color: hsl(219, 12%, 42%);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.post:hover{
+    color: hsl(219, 85%, 26%)
+}
+
+.author-img{
+    width: 55px;
+}
+
+.new{
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.circle{
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 1px;
+    border-radius: 50%;
+}
+
+
+.private{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.notificationX{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.private-container{
+    transition: 0.1s;
+    margin-left: 88px;
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.private-container:hover{
+    transition: 0.1s;
+    background-color:  hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+
+.group{
+    color:hsl(219, 85%, 26%);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 0;
+    }
+
+    .container h1{
+        font-size: 20px;
+    }
+
+    .container{
+        padding: 15px;
+    }
+
+    .notification{
+        font-size: 16px;
+    }
+    .notificationX{
+        font-size: 16px;
+    }
+
+    .private{
+        font-size: 16px;
+    }
+}   
